@@ -1,0 +1,54 @@
+Git Profile API
+https://github.com/divvydose/coding_challenge
+Context
+divvyDOSE's internal systems bridge the gaps between the numerous steps required to acquire,
+  validate, fill and ship medications to our customers. We leverage several external services and
+  APIs to facilitate these workflows and often have to deal with differing data schemas. This
+  challenge addresses a portion of that process, aggregation of similar yet disparate information,
+  and presenting it in a single unified schema.
+  Challenge
+  For this challenge, you will develop an API that aggregates data from both Github and Bitbucket
+  APIs to present information in a unified response.
+  Your solution needs to achieve the following:
+  ● Expose at least one RESTful endpoint that responds with a merged organization/team
+  profile with data from both Github and Bitbucket
+  ● Provide a RESTful way for a client to provide the Github organization and Bitbucket team
+  names to merge for the profile
+  ● The profile should include the following information (when available):
+    ○ Total number of public repos (seperate by original repos vs forked repos)
+    ○ Total watcher/follower count
+    ○ A list/count of languages used across all public repos
+    ○ A list/count of repo topics
+    Here are few organizations/teams that you can use to test your solution:
+    ● Mailchimp:
+    ○ https://github.com/mailchimp
+    ○ https://bitbucket.org/mailchimp
+    ● PyGame:
+    ○ https://github.com/pygame
+    ○ https://bitbucket.org/pygameConsiderations
+    The following questions are things to consider while coding your solution; you don't necessarily
+    need to implement solutions to all of them but be ready to talk about each:
+    ● How do you handle versions of external APIs - are some versions better suited to solve
+    our problem?
+    ● How do you/would you handle a failed network call to Github/Bitbucket?
+    ○ What do you return to the client?
+    ● Which REST verbs and URI structure makes the most sense?
+    ● How efficient is your code?
+    Rules of Engagement
+    ●
+    ●
+    ●
+    ●
+    ●
+    ●
+    Use Python, preferably 3.6.x & Flask.
+    Please use this repository as a template for your solution:
+    https://github.com/divvydose/coding_challenge
+    Your code must work as you document it in a README.md file; we will not fiddle with it
+    to make it work.
+    You should document (docstrings, comments, etc) your code to the level you feel it
+    makes it maintainable.
+    Your code should have unit tests or stubbed out "what you'd want to test" in your
+    documentation.
+    Have fun! This challenge is meant as a way for you to show your skills and start a
+    conversation with the team about how to approach solving problems.
